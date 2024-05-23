@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rishik Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Add Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Add jQuery (required by Slick Slider) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Add Slick Slider JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Add Boxicons links-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Adding Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img class="logo" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png"
+                    alt="Rishik Hospital Logo">
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>	
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a
+                            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
+                    </li>
+                    <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+                    <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a></li>
+                    <li><a href="#">Cosmetic</a></li>
+                    <li><a
+                            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
+                    </li>
+                    <li><a
+                            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1>WE TAKE CARE <br> <span> BECAUSE WE CARE </span></h1>
+            <p class="par">Excellent health service for all patients who come to our hospital</p>
+            
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+            <script>
+                const form = document.getElementById('form');
+                const result = document.getElementById('result');
+                const submitBtn = document.getElementById('submitBtn');
+
+                submitBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const formData = new FormData();
+                    formData.append('access_key', 'ff5b14c6-5645-46cd-8755-00e671b0436b');
+                    formData.append('email', document.querySelector('input[name="email"]').value);
+                    formData.append('number', document.querySelector('input[name="number"]').value);
+                    formData.append('department', document.querySelector('select[name="department"]').value);
+                    formData.append('date', document.querySelector('input[name="date"]').value);
+                    result.innerHTML = "Please wait...";
+
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(async (response) => {
+                            let json = await response.json();
+                            if (response.status == 200) {
+                                result.innerHTML = "Form submitted successfully";
+                                form.reset(); // Reset the form fields
+                            } else {
+                                console.log(response);
+                                result.innerHTML = json.message;
+                            }
+                        })
+                        .catch(error => {
+                            console.log(error);
+                            result.innerHTML = "Something went wrong!";
+                        })
+                        .then(function () {
+                            setTimeout(() => {
+                                result.innerHTML = "";
+                            }, 3000);
+                        });
+                });
+            </script>
+        </div>
+    </div>
+    <div class="form" id="form">
+        <input type="hidden" name="access_key" value="ff5b14c6-5645-46cd-8755-00e671b0436b">
+        <h2>Book an Appointment</h2>
+        <input type="Email" name="email" placeholder="Enter your Email">
+        <input type="tel" name="number" placeholder="Enter your Number">
+        <select id="department" name="department">
+            <option value="Bariatric Appointment">Bariatric Appointment</option>
+            <option value="Gastro">Gastro Sciences</option>
+            <option value="other">Other Specialities</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="date" id="date" name="date">
+        <button class="book" id="submitBtn">Book Now</button>
+        <div id="result"></div>
+    </div>
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <h3>Rajasthan's First Dedicated Center of Bariatric, Cosmetic & Gastro Sciences</h3>
+                    <p>Welcome to Rishik Hospitals, where transformative healthcare meets compassionate excellence. As
+                        Jaipur's leading center for Bariatric, Cosmetic, and Gastro Sciences, we go beyond treatments to
+                        deliver a personalized experience designed to uplift and empower. Our state-of-the-art facility
+                        not only offers advanced clinical, surgical, and diagnostic services but also stands as a beacon
+                        of innovation and care.</p>
+                    <p>At Rishik Hospitals, we prioritize your well-being by combining cutting-edge techniques with
+                        compassionate care. Whether it's single-incision or scarless procedures, our team tailors every
+                        aspect of your healthcare journey to meet your specific needs. Experience the difference with
+                        Rishik Hospitals, where your health and satisfaction are our top priorities.</p>
+                    <a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html" class="btn">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                        alt="About Us Image" class="main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer"></div> <!-- Add empty space between sections -->
+
+    <!-- Services section begins here -->
+    <div class="procedures">
+        <h2>PROCEDURES</h2>
+    </div>
+    <div class="services-slider">
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P1.png"
+                alt="Service 1">
+            <h3>Intra Gastric Balloon</h3>
+            <p>Non-surgical weight loss procedure for effective and safe weight management.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P2.png"
+                alt="Service 2">
+            <h3>Endoscopic Sleeve Gastroplasty</h3>
+            <p>Minimally invasive procedure to reduce stomach size and aid in weight loss.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P3.png"
+                alt="Service 3">
+            <h3>Sleeve Gastrectomy - SG</h3>
+            <p>Surgical weight loss procedure to reduce stomach size and promote long-term weight loss.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P4.png"
+                alt="Service 1">
+            <h3>ROUX en Y Gastric Bypass - RYGB</h3>
+            <p>Surgical procedure to reduce stomach size and reroute the digestive system, aiding in significant weight loss.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P5.png"
+                alt="Service 2">
+            <h3>Mini Gastric Bypass - MGB</h3>
+            <p>Minimally invasive procedure to reroute the digestive system, promoting effective weight loss.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P6.png"
+                alt="Service 3">
+            <h3>Upper GI Endoscopy</h3>
+            <p>Diagnostic procedure to examine the upper gastrointestinal tract for various conditions.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P7.png"
+                alt="Service 3">
+            <h3>ERCP</h3>
+            <p>Endoscopic procedure to diagnose and treat conditions affecting the bile ducts and pancreatic ducts.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P8.png"
+                alt="Service 3">
+            <h3>Colonoscopy</h3>
+            <p>Screening procedure to detect and prevent colon cancer and other gastrointestinal conditions.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P9.png"
+                alt="Service 3">
+            <h3>Sigmoidoscopy</h3>
+            <p>Diagnostic procedure to examine the lower part of the colon and rectum for abnormalities.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P10.png"
+                alt="Service 3">
+            <h3>HPB Surgery</h3>
+            <p>Surgical treatment for diseases affecting the liver, pancreas, and bile ducts.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P11.png"
+                alt="Service 3">
+            <h3>GI Onco Surgery</h3>
+            <p>Surgical treatment for gastrointestinal cancers, ensuring comprehensive care and effective treatment.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P12.png"
+                alt="Service 3">
+            <h3>Colo Rectal Surgery</h3>
+            <p>Surgical treatment for conditions affecting the colon and rectum, restoring digestive health.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P13.png"
+                alt="Service 3">
+            <h3>Laparoscopic Surgery</h3>
+            <p>Minimally invasive surgical technique for various procedures, reducing recovery time and discomfort.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P14.png"
+                alt="Service 3">
+            <h3>Hernia Surgery</h3>
+            <p>Surgical treatment for hernias, providing lasting relief and restoring abdominal strength.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P15.png"
+                alt="Service 3">
+            <h3>Anorectal Surgery</h3>
+            <p>Surgical treatment for conditions affecting the anus and rectum, providing relief and restoring function.</p>
+        </div>
+        <div class="service-slide">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/P16.png"
+                alt="Service 3">
+            <h3>Gall Bladder Surgery</h3>
+            <p>Advanced surgical treatment for gall bladder diseases, ensuring improved digestive health.</p>
+        </div>
+        <!-- Add more service slides as needed -->
+    </div>
+    <!-- Add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add Slick Slider JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.services-slider').slick({
+                slidesToShow: 3, // Show 3 slides at a time
+                slidesToScroll: 1, // Scroll 1 slide at a time
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+                arrows: true, // Hide navigation arrows
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+
+    <div class="spacer"></div> <!-- Add empty space between sections -->
+
+    <div class="dr-container">
+        <h2>OUR DOCTORS</h2>
+        <div class="dr-about">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                alt="Dr. Surendra Jangid">
+            <div class="dr-details">
+                <h2>Dr. Surendra Jangid</h2>
+                <p>Bariatric and Gastro Surgeon</p>
+            </div>
+        </div>
+        <div class="dr-about">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrShweta.png"
+                alt="Dr. Shweta Jangid">
+            <div class="dr-details">
+                <h2>Dr. Shweta Jangid</h2>
+                <p>Cosmetic and Hair Transplant Surgeon</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div> <!-- Add empty space between sections -->
+
+    <section class="testimonials">
+        <div class="slider">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonials-slider">
+                <div><img
+                        src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T1.png"
+                        alt="Procedure 1"></div>
+                <div><img
+                        src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T2.png"
+                        alt="Procedure 2"></div>
+                <div><img
+                        src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T3.png"
+                        alt="Procedure 3"></div>
+                <div><img
+                        src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T4.png"
+                        alt="Procedure 4"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Initialize Slick Slider -->
+    <script>
+        $(document).ready(function () {
+            $('.testimonials-slider').slick({
+                dots: true, // Add navigation dots
+                arrows: true, // Add navigation arrows
+                autoplay: true, // Enable autoplay
+                autoplaySpeed: 3000, // Set autoplay speed in milliseconds
+            });
+        });
+    </script>
+
+
+
+    <section class="address-section">
+        <div class="container">
+            <h2>VISIT US</h2>
+            <div class="address-info">
+                <div class="address-item">
+                    <h3>Main Location</h3>
+                    <p>Plot No-17, Near ECHS Clinic</p>
+                    <p>Vidhyadhar Nagar, Jaipur, Rajasthan 302039</p>
+                    <p>India</p>
+                </div>
+                <div class="address-item">
+                    <h3>Branch Location</h3>
+                    <p>456 Street Name</p>
+                    <p>City, State ZIP</p>
+                    <p>Country</p>
+                </div>
+                <div class="address-item">
+                    <h3>Opening Hours</h3>
+                    <p>24 Hours</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+        <div class="footer-content">
+            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png">
+            <p>&copy; 2024 Rishik Hospital. All rights reserved.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.yahoo.com"><i class='bx bxl-youtube' ></i></a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h4>CONTACT</h4>
+            <li><a href="">rishikhospitals@gmail.com</a></li>
+            <li><a href="">7300333555</a></li>
+            <li><a href="">8302883529</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>QUICK LINKS</h4>
+            <li><a href="/var/www/html/index.html">Home</a></li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/procedures.html">Procedures</a></li>
+            <li><a href="">Cosmetics</a></li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a></li>
+        </div>
+        <div class="footer-content">
+            <h4>ADDRESS</h4>
+            <li><a href="">Plot No -17, Near ECHS Clinic, <br>Vidyadhar Nagar, Jaipur, Rajasthan <br>302013</a></li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.253758746908!2d75.77015087520198!3d26.95886227661972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3b907b20303%3A0xb41bb8f4f6745a85!2sRISHIK%20HOSPITALS%20-%20Gastro%20%26%20Bariatric%20in%20Jaipur%20Rajasthan%2C%20Best%20Hospital%20in%20Vidhyadhar%20Nagar%20Jaipur%20%7C%20hair%20transplant%20surgeon!5e0!3m2!1sen!2sin!4v1708957098131!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+
+</body>
+<script>
+    (function () {
+	$('.hamburger-menu').on('click', function() {
+		$('.bar').toggleClass('animate');
+    $('.menu').toggleClass('active');
+    return false;
+	})
+  $('.has-children').on ('click', function() {
+		   $(this).children('ul').slideToggle('slow', 'swing');
+       $('.icon-arrow').toggleClass('open');
+	});
+})();
+</script>
+
+</html>

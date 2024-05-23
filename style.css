@@ -1,0 +1,755 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*To add space between section use this css */
+.spacer {
+    height: 50px; /* Adjust as needed */
+}
+
+/* Body styles
+body {
+    font-family: 'poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #1c2c30;
+}*/
+.section, .services-slider {
+    overflow: hidden;
+}
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 100px;
+
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 150px;
+}
+
+.logo {
+    width: 300px;
+    padding-left: 10px;
+    height: 170px;
+}
+
+.menu{
+    margin-top: 50px;
+    padding-left: 80px;
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #025b62;
+}
+
+/*Content on Banner*/
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: "DejaVu Serif", serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 20%;
+    letter-spacing: 2px;
+}
+
+.content span {
+    color: #36a1c0;
+}
+
+.form {
+    width: 295px;
+    height: 420px;
+    background: linear-gradient(to top, rgba(213, 227, 234, 0.5) 50%, rgba(213, 227, 234, 0.5) 50%);
+    position: absolute;
+    bottom: 210px;
+    right: 390px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.form h2 {
+    width: 250px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #025b62;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #025b62;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+
+}
+
+.book {
+    width: 240px;
+    height: 40px;
+    background: #36a1c0;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.book:hover {
+    background: #025b62;
+}
+
+.book a {
+    text-decoration: none;
+    color: #d5e3ea;
+    font-weight: bold;
+}
+
+
+
+
+/* About Us Section */
+.about-section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    width: 240px;
+    height: 40px;
+    padding: 0;
+    background-color: #36a1c0;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    text-decoration:none;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px; /* Added line-height for vertical alignment */
+}
+
+.btn:hover {
+    background-color: #025b62;
+}
+
+.about-image {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover .main-image {
+    transform: scale(1.1);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.about-image:hover::before {
+    opacity: 1;
+}
+
+
+
+/* Servcies slider */
+.procedures {
+    color: #1c2c30;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.procedures h2 {
+    color: #1c2c30;
+    font-family: "Nunito", sans-serif;
+}
+
+.services-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.service-slide {
+    width: 300px;
+    margin: 10px 10px;
+    min-height: 215px !important;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-slide:hover {
+    transform: scale(1.05); /* Increase the size by 10% */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.service-slide img {
+    display: block; /* Ensures images behave as block elements */
+    margin: 0 auto; /* Centers images horizontally within their container */
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.service-slide h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+.service-slide p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Doctor Intorduction section */
+.dr-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dr-container h2 {
+    color: #1c2c30;
+    font-family: "Nunito", sans-serif;
+}
+.dr-about {
+    display: inline-block;
+    margin: 10px;
+}
+
+.dr-about img {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.dr-details h2 {
+    margin-bottom: 5px;
+    font-family: "Nunito", sans-serif;
+}
+
+.dr-details p {
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact {
+    display: grid;
+
+}
+
+
+/* Procedures Section styles */
+
+.testimonials {
+    background-color: #d5e3ea;
+    padding-bottom: 30px;
+}
+
+.slider{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.slider h2 {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    color: #1b2c2f;
+    font-family: "Nunito", sans-serif;
+}
+
+.testimonials-slider {
+
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.testimonials-slider img {
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+/*Address section */
+
+.address-section {
+    background-color: #025b62;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f4f5f4;
+    font-family: "Nunito", sans-serif;
+}
+
+.address-info {
+    display: flex;
+    justify-content: center;
+}
+
+.address-item {
+    margin: 0 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.address-item:hover {
+    transform: translateY(-5px);
+}
+
+.address-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #025b62;
+    font-family: "Nunito", sans-serif;
+}
+
+.address-item p {
+    margin-bottom: 5px;
+    color: #025b62;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* Footer styles */
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: #025b62;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px 7% 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.footer-content h4 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-content li {
+    margin-bottom: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-content li a {
+    display: block;
+    color: #d5e3ea;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .40s ease;
+    text-decoration: none;
+}
+
+.footer-content iframe {
+    width: 300px;
+    height: 150px;
+}
+
+.footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+}
+
+.footer-content p {
+    color: #d5e3ea;
+    font-size: 12px;
+    line-height: 30px;
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.icons a {
+    display: inline-block;
+    justify-content: center;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40s ease;
+}
+
+.icons a:hover {
+    color: #fff;
+    transform: translateY(-5px)
+}
+
+/* Add your custom CSS styles here */
+
+
+
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9998;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-color: rgb(2 91 98 / 76%);
+    /* background-color: #025b62; */
+    padding: 12px 20px;
+    display: none;
+}
+  
+  .bar,
+  .bar:after,
+  .bar:before {
+    width: 30px;
+    height: 3px;
+  }
+  
+  .bar {
+    position: relative;
+    transform: translateY(10px);
+    background: white;
+    transition: all 0ms 300ms;
+  }
+  
+  .bar.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+        font-family: "Nunito", sans-serif;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+    .navbar, .content {width:100%}
+    footer {
+        padding: 30px 7% 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 2rem;
+    }
+    
+    .address-info {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .testimonials-slider img {width: auto;height: 375px;}
+    .testimonials {overflow: hidden;}
+    .address-item {
+        margin: 0 0 16px;
+    }
+    .footer {
+        gap: 1.5rem;
+    }
+    .footer-content p {margin: 0px;}
+    .testimonials {padding: 0px;}
+    .main {
+        height: auto;
+        background-size: 100%;
+    }
+    .content h1 {
+        font-size: 30px;
+    }
+    .slick-dots {display: none !important;}
+    .slick-arrow {display: none !important;}
+    .about {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0 18px;
+    }
+    .about-image {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 36px;
+        max-width: 100%;
+    }
+    .spacer {display: none;}
+    .procedures {margin-top: 0px;}
+    .procedures h2 {
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
+    .dr-about img {
+        width: 100%;
+    }
+    .btn {width: 100%}
+    .menu.active {
+        display: block !important;
+        position: fixed;
+        background-color: #025b62;
+        height: 100%;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        padding-left: 0px;
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu.active ul {
+        display: block;
+        width: 100%;
+    }
+    .menu.active ul li {
+        list-style: none;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 24px;
+        padding: 14px 22px;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+    .hamburger-menu {display: block;}
+} 
+/* Add your custom CSS styles here */
