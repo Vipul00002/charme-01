@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 2em 0;
+    background: #f4f4f4;
+}
+
+.info, aside {
+    padding: 2em;
+}
+
+.surgery-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.option {
+    flex: 1 1 calc(25% - 1em);
+    background: #e4e4e4;
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
