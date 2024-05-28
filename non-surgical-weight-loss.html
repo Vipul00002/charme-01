@@ -46,21 +46,250 @@
     </style><!--==============================
         Header Area
     ==============================-->
-    <div  style="background-color:#025b62; width: 100%; height: 100px; color: black;">
+    <style>
+        .mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* display: ; */
+        }
+    
+        .mobile-logo img {
+            height: 40px;
+        }
+    
+        .mobile-icon img {
+            height: 30px;
+            cursor: pointer;
+        }
+    
+        .slidebar-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            z-index: 1000;
+        }
+    
+        .route-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .route-container a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 0;
+        }
+    
+        .bottom {
+            display: flex;
+            gap: 10px;
+        }
+    
+        .bottom a img {
+            height: 30px;
+        }
+    
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 500;
+        }
+    
+        .hamburger-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 48px;
+            cursor: pointer;
+            z-index: 9998;
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            background-color: rgb(2 91 98 / 76%);
+            /* background-color: #025b62; */
+            padding: 12px 20px;
+            display: none;
+        }
+    
+        .bar,
+        .bar:after,
+        .bar:before {
+            width: 30px;
+            height: 3px;
+        }
+    
+        .bar {
+            position: relative;
+            transform: translateY(10px);
+            background: white;
+            transition: all 0ms 300ms;
+        }
+    
+        .bar.animate {
+            background: rgba(255, 255, 255, 0);
+        }
+    
+        .bar:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            background: white;
+            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    
+        .bar:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            background: white;
+            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    
+        .bar.animate:after {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    
+        .bar.animate:before {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    
+    
+        .slidebar-container {
+            display: flex;
+            background-color: #025b62;
+            color: white;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            padding: 1opx;
+            text-align: center;
+            font-size: 16px;
+            z-index: 100;
+            display: none;
+        }
+    
+    
+        .route-container {
+            margin-top: 50px;
+            /* color: white; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            align-items: flex-start;
+            /* margin-bottom: 2rem; */
+            /* font-size: 5rem; */
+        }
+    
+        .slidebar-container .route-container a {
+            color: white;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+    
+        .slidebar-container .bottom {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 8rem;
+        }
+    
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.45);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+    
+    
+        @media (max-width: 768px) {
+            .men {
+                display: none;
+    
+            }
+    
+    
+            .menu.active {
+                display: block !important;
+                position: fixed;
+                background-color: #025b62;
+                height: 100%;
+                z-index: 999;
+                left: 0;
+                top: 0;
+                margin-top: 0;
+                padding-left: 0px;
+                width: 100%;
+                padding-top: 60px;
+            }
+    
+            .menu.active ul {
+                display: block;
+                width: 100%;
+            }
+    
+            .menu.active ul li {
+                list-style: none;
+                margin-left: 0;
+                margin-top: 0;
+                font-size: 24px;
+                padding: 14px 22px;
+            }
+    
+            .about-content {
+                max-width: 100%;
+            }
+    
+            .hamburger-menu {
+                display: block;
+            }
+    
+    
+    
+        }
+    </style>
+    
+    <div style="background-color:#025b62; width: 100%; height: 100px; color: black;">
+    
         <div class="icon">
             <img class="logo" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png"
                 alt="Rishik Hospital Logo">
         </div>
-        <div class="hamburger-menu">
+        <div onclick="openSide()" id="hamburger" class="hamburger-menu">
             <div class="bar"></div>
         </div>
-        <div class="men" style="background-color: red;">
+        <div class="men">
             <ul>
                 <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
                 </li>
                 <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
-                <li><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
+                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
                 </li>
                 <li><a href="#">Cosmetic</a></li>
                 <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
@@ -71,7 +300,40 @@
                 </li>
             </ul>
         </div>
+    
+    
+        <div id="sidebar" class="slidebar-container">
+            <div class="route-container">
+                <li style="list-style: none; padding: 10px 0;"><a
+                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
+                </li>
+                <li style="list-style: none; padding: 10px 0;"><a
+                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+                <li style="list-style: none; padding: 10px 0;"><a
+                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
+                </li>
+                <li style="list-style: none; padding: 10px 0;"><a href="#">Cosmetic</a></li>
+                <li style="list-style: none; padding: 10px 0;"><a
+                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
+                </li>
+                <li style="list-style: none; padding: 10px 0;"><a
+                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
+                </li>
+                <li style="list-style: none; padding: 10px 0;"><a href="Appointment.html">Appointment</a>
+                </li>
+            </div>
+    
+            <script>
+                function openSide() {
+                    let div = document.getElementById("sidebar");
+                    div.style.display = "flex";
+    
+                }
+    
+            </script>
+        </div>
     </div>
+
 
     <!--==============================
      Preloader
