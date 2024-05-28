@@ -36,6 +36,14 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/style.css">
     <link rel="stylesheet" href="surgical.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+
+
+
+      "
+  />
     <style type="text/css">
         .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6{
                 font-family: arial !important;
@@ -298,6 +306,12 @@
                 </li>
                 <li><a href="Appointment.html">Appointment</a>
                 </li>
+                <li>
+                    <a
+                      href="https://wa.me/+917300333555"
+                      ><i style="font-size: 40px ;" class="fa-brands fa-whatsapp"></i></a
+                    >
+                  </li>
             </ul>
         </div>
     
@@ -321,14 +335,21 @@
                 </li>
                 <li style="list-style: none; padding: 10px 0;"><a href="Appointment.html">Appointment</a>
                 </li>
+                <li style="list-style: none; padding: 10px 0;">
+                    <a target=”_blank” href="https://wa.me/+917300333555"><i style="font-size: 40px ;" class="fa-brands fa-whatsapp"></i></a>
+                </li>
             </div>
     
             <script>
-                function openSide() {
-                    let div = document.getElementById("sidebar");
+            function openSide() {
+                let div = document.getElementById("sidebar");
+                if (div.style.display === "none") {
                     div.style.display = "flex";
-    
+                } else {
+                    div.style.display = "none";
                 }
+
+            }
     
             </script>
         </div>

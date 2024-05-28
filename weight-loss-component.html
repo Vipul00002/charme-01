@@ -1,338 +1,367 @@
 <!--==============================
 	   Google Web Fonts
 	============================== -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
 
-    <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="https://drmohitbhandari.com/assets/img/favicon.jpeg" type="image/x-icon">
-    <link rel="icon" href="https://drmohitbhandari.com/assets/img/favicon.jpeg" type="image/x-icon">
+<!-- Favicons - Place favicon.ico in the root directory -->
+<link rel="shortcut icon" href="https://drmohitbhandari.com/assets/img/favicon.jpeg" type="image/x-icon">
+<link rel="icon" href="https://drmohitbhandari.com/assets/img/favicon.jpeg" type="image/x-icon">
 
-    <!--==============================
+<!--==============================
 	    All CSS File
 	============================== -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
-    <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/fontawesome.min.css">
-    <!-- Layerslider -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/layerslider.min.css">
-    <!-- jQuery DatePicker -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/jquery.datetimepicker.min.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/magnific-popup.min.css">
-    <!-- Slick Slider -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/slick.min.css">
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/animate.min.css">
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/style.css">
-    <link rel="stylesheet" href="surgical.css">
-    <style type="text/css">
-        .h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6{
-                font-family: arial !important;
-        }
-        .header-top-info li i{
-            color:  #fff !important;
-        }
-    </style><!--==============================
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+<!-- Fontawesome Icon -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/fontawesome.min.css">
+<!-- Layerslider -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/layerslider.min.css">
+<!-- jQuery DatePicker -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/jquery.datetimepicker.min.css">
+<!-- Magnific Popup -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/magnific-popup.min.css">
+<!-- Slick Slider -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/slick.min.css">
+<!-- Animate CSS -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/animate.min.css">
+<!-- Theme Custom CSS -->
+<link rel="stylesheet" href="https://drmohitbhandari.com/assets/css/style.css">
+<link rel="stylesheet" href="surgical.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+
+
+
+  " />
+<style type="text/css">
+    .h1,
+    h1,
+    .h2,
+    h2,
+    .h3,
+    h3,
+    .h4,
+    h4,
+    .h5,
+    h5,
+    .h6,
+    h6 {
+        font-family: arial !important;
+    }
+
+    .header-top-info li i {
+        color: #fff !important;
+    }
+</style><!--==============================
         Header Area
     ==============================-->
-    <style>
-        .mobile {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* display: ; */
-        }
-    
-        .mobile-logo img {
-            height: 40px;
-        }
-    
-        .mobile-icon img {
-            height: 30px;
-            cursor: pointer;
-        }
-    
-        .slidebar-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 250px;
-            height: 100%;
-            background-color: #fff;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-            z-index: 1000;
-        }
-    
-        .route-container {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-    
-        .route-container a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 0;
-        }
-    
-        .bottom {
-            display: flex;
-            gap: 10px;
-        }
-    
-        .bottom a img {
-            height: 30px;
-        }
-    
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 500;
-        }
-    
-        .hamburger-menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 48px;
-            cursor: pointer;
-            z-index: 9998;
-            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-            background-color: rgb(2 91 98 / 76%);
-            /* background-color: #025b62; */
-            padding: 12px 20px;
+<style>
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* display: ; */
+    }
+
+    .mobile-logo img {
+        height: 40px;
+    }
+
+    .mobile-icon img {
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .slidebar-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .route-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .route-container a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 0;
+    }
+
+    .bottom {
+        display: flex;
+        gap: 10px;
+    }
+
+    .bottom a img {
+        height: 30px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 500;
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        cursor: pointer;
+        z-index: 9998;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        background-color: rgb(2 91 98 / 76%);
+        /* background-color: #025b62; */
+        padding: 12px 20px;
+        display: none;
+    }
+
+    .bar,
+    .bar:after,
+    .bar:before {
+        width: 30px;
+        height: 3px;
+    }
+
+    .bar {
+        position: relative;
+        transform: translateY(10px);
+        background: white;
+        transition: all 0ms 300ms;
+    }
+
+    .bar.animate {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    .bar:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        background: white;
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bar:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background: white;
+        transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bar.animate:after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .bar.animate:before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+
+    .slidebar-container {
+        display: flex;
+        background-color: #025b62;
+        color: white;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        padding: 1opx;
+        text-align: center;
+        font-size: 16px;
+        z-index: 100;
+        display: none;
+    }
+
+
+    .route-container {
+        margin-top: 50px;
+        /* color: white; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: flex-start;
+        /* margin-bottom: 2rem; */
+        /* font-size: 5rem; */
+    }
+
+    .slidebar-container .route-container a {
+        color: white;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .slidebar-container .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 8rem;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.45);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
+
+
+    @media (max-width: 768px) {
+        .men {
             display: none;
+
         }
-    
-        .bar,
-        .bar:after,
-        .bar:before {
-            width: 30px;
-            height: 3px;
-        }
-    
-        .bar {
-            position: relative;
-            transform: translateY(10px);
-            background: white;
-            transition: all 0ms 300ms;
-        }
-    
-        .bar.animate {
-            background: rgba(255, 255, 255, 0);
-        }
-    
-        .bar:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 10px;
-            background: white;
-            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-    
-        .bar:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 10px;
-            background: white;
-            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-    
-        .bar.animate:after {
-            top: 0;
-            transform: rotate(45deg);
-            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-    
-        .bar.animate:before {
-            bottom: 0;
-            transform: rotate(-45deg);
-            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-        }
-    
-    
-        .slidebar-container {
-            display: flex;
+
+
+        .menu.active {
+            display: block !important;
+            position: fixed;
             background-color: #025b62;
-            color: white;
-            width: 100%;
             height: 100%;
-            position: absolute;
-            top: 0%;
-            padding: 1opx;
-            text-align: center;
-            font-size: 16px;
-            z-index: 100;
-            display: none;
-        }
-    
-    
-        .route-container {
-            margin-top: 50px;
-            /* color: white; */
-            display: flex;
-            flex-direction: column;
-            /* justify-content: space-between; */
-            align-items: flex-start;
-            /* margin-bottom: 2rem; */
-            /* font-size: 5rem; */
-        }
-    
-        .slidebar-container .route-container a {
-            color: white;
-            font-size: 2rem;
-            padding: 2rem 0;
-        }
-    
-        .slidebar-container .bottom {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 8rem;
-        }
-    
-        .overlay {
+            z-index: 999;
+            left: 0;
+            top: 0;
+            margin-top: 0;
+            padding-left: 0px;
             width: 100%;
-            height: 100%;
-            background-color: rgb(0, 0, 0, 0.45);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
+            padding-top: 60px;
         }
-    
-    
-        @media (max-width: 768px) {
-            .men {
-                display: none;
-    
-            }
-    
-    
-            .menu.active {
-                display: block !important;
-                position: fixed;
-                background-color: #025b62;
-                height: 100%;
-                z-index: 999;
-                left: 0;
-                top: 0;
-                margin-top: 0;
-                padding-left: 0px;
-                width: 100%;
-                padding-top: 60px;
-            }
-    
-            .menu.active ul {
-                display: block;
-                width: 100%;
-            }
-    
-            .menu.active ul li {
-                list-style: none;
-                margin-left: 0;
-                margin-top: 0;
-                font-size: 24px;
-                padding: 14px 22px;
-            }
-    
-            .about-content {
-                max-width: 100%;
-            }
-    
-            .hamburger-menu {
-                display: block;
-            }
-    
-    
-    
+
+        .menu.active ul {
+            display: block;
+            width: 100%;
         }
-    </style>
-    
-    <div style="background-color:#025b62; width: 100%; height: 100px; color: black;">
-    
-        <div class="icon">
-            <img class="logo" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png"
-                alt="Rishik Hospital Logo">
-        </div>
-        <div onclick="openSide()" id="hamburger" class="hamburger-menu">
-            <div class="bar"></div>
-        </div>
-        <div class="men">
-            <ul>
-                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
-                </li>
-                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
-                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
-                </li>
-                <li><a href="#">Cosmetic</a></li>
-                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
-                </li>
-                <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
-                </li>
-                <li><a href="Appointment.html">Appointment</a>
-                </li>
-            </ul>
-        </div>
-    
-    
-        <div id="sidebar" class="slidebar-container">
-            <div class="route-container">
-                <li style="list-style: none; padding: 10px 0;"><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
-                </li>
-                <li style="list-style: none; padding: 10px 0;"><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
-                <li style="list-style: none; padding: 10px 0;"><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
-                </li>
-                <li style="list-style: none; padding: 10px 0;"><a href="#">Cosmetic</a></li>
-                <li style="list-style: none; padding: 10px 0;"><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
-                </li>
-                <li style="list-style: none; padding: 10px 0;"><a
-                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
-                </li>
-                <li style="list-style: none; padding: 10px 0;"><a href="Appointment.html">Appointment</a>
-                </li>
-            </div>
-    
-            <script>
-                function openSide() {
-                    let div = document.getElementById("sidebar");
-                    div.style.display = "flex";
-    
-                }
-    
-            </script>
-        </div>
+
+        .menu.active ul li {
+            list-style: none;
+            margin-left: 0;
+            margin-top: 0;
+            font-size: 24px;
+            padding: 14px 22px;
+        }
+
+        .about-content {
+            max-width: 100%;
+        }
+
+        .hamburger-menu {
+            display: block;
+        }
+
+
+
+    }
+</style>
+
+<div style="background-color:#025b62; width: 100%; height: 100px; color: black;">
+
+    <div class="icon">
+        <img class="logo" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png"
+            alt="Rishik Hospital Logo">
+    </div>
+    <div onclick="openSide()" id="hamburger" class="hamburger-menu">
+        <div class="bar"></div>
+    </div>
+    <div class="men">
+        <ul>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
+            </li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
+            </li>
+            <li><a href="#">Cosmetic</a></li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
+            </li>
+            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
+            </li>
+            <li><a href="Appointment.html">Appointment</a>
+            </li>
+            <li>
+                <a target=”_blank” href="https://wa.me/+917300333555"><i style="font-size: 40px ;" class="fa-brands fa-whatsapp"></i></a>
+            </li>
+        </ul>
     </div>
 
 
-    <!--==============================
+    <div id="sidebar" class="slidebar-container">
+        <div class="route-container">
+            <li style="list-style: none; padding: 10px 0;"><a
+                    href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html">Home</a>
+            </li>
+            <li style="list-style: none; padding: 10px 0;"><a
+                    href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+            <li style="list-style: none; padding: 10px 0;"><a
+                    href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html">Procedures</a>
+            </li>
+            <li style="list-style: none; padding: 10px 0;"><a href="#">Cosmetic</a></li>
+            <li style="list-style: none; padding: 10px 0;"><a
+                    href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a>
+            </li>
+            <li style="list-style: none; padding: 10px 0;"><a
+                    href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html">Contact</a>
+            </li>
+            <li style="list-style: none; padding: 10px 0;"><a href="Appointment.html">Appointment</a>
+            </li>
+            <li style="list-style: none; padding: 10px 0;">
+                <a target=”_blank” href="https://wa.me/+917300333555"><i style="font-size: 40px ;" class="fa-brands fa-whatsapp"></i></a>
+            </li>
+        </div>
+
+        <script>
+            function openSide() {
+                let div = document.getElementById("sidebar");
+                if (div.style.display === "none") {
+                    div.style.display = "flex";
+                } else {
+                    div.style.display = "none";
+                }
+
+            }
+
+        </script>
+    </div>
+</div>
+
+
+<!--==============================
      Preloader
   ==============================-->
-    <!-- <div class="preloader  ">
+<!-- <div class="preloader  ">
         <button class="vs-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
             <svg width="88px" height="108px" viewBox="0 0 54 64">
@@ -343,70 +372,70 @@
             </svg>
         </div>
     </div> -->
-    <!--==============================
+<!--==============================
     Mobile Menu
-  ============================== --> 
-    <div class="vs-menu-wrapper">
-        <div class="vs-menu-area text-center">
-            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="mobile-logo">
-                <a href="index.html">
-                    <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T1.png" alt="Medixi">
-                    <!-- <h3>Dr Mohit<br> Bhandari</h3> -->
-                </a>
-            </div>
-            <form action="#" class="mobile-menu-form">
-                <input type="text" class="form-control" placeholder="Search...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <div class="vs-mobile-menu">
-                <ul> 
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Weight Loss Options</a>
-                        <ul class="sub-menu">
-                            <li><a href="weight-loss-component.html">Surgical Options</a></li>
-                            <li><a href="non-surgical-weight-loss.html">Non-Surgical Options</a></li>
-                            <li><a href="m">Medical Weight Loss Options</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Locations</a>
-                        <ul class="sub-menu">
-                            <li><a href="https://drmohitbhandari.com/indore">Indore</a></li>
-                            <li><a href="https://drmohitbhandari.com/ahamdabad">Ahmedabad</a></li>
-                            <li><a href="https://drmohitbhandari.com/mumbai">Mumbai</a></li>
-                            <li><a href="https://drmohitbhandari.com/gurgaon">Gurugram</a></li>
-                            <li><a href="https://drmohitbhandari.com/hyderabad">Hyderabad</a></li>
-                            <li><a href="https://drmohitbhandari.com/nairobi">Nairobi</a></li>
-                            <li><a href="https://drmohitbhandari.com/der-es-salaam">Dar-es-Salaam</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">More</a>
-                        <ul class="sub-menu">
-                            <li><a href="https://drmohitbhandari.com/team">Team</a></li>
-                            <li><a href="https://drmohitbhandari.com/gallary">Gallery</a></li>
-                            <li><a href="https://drmohitbhandari.com/blog">Blog</a></li>
-                            <li><a href="https://drmohitbhandari.com/patient-testimonials">Patient Testimonials</a></li>
-                        </ul>
-                    </li>
+  ============================== -->
+<div class="vs-menu-wrapper">
+    <div class="vs-menu-area text-center">
+        <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+        <div class="mobile-logo">
+            <a href="index.html">
+                <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/T1.png" alt="Medixi">
+                <!-- <h3>Dr Mohit<br> Bhandari</h3> -->
+            </a>
+        </div>
+        <form action="#" class="mobile-menu-form">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="vs-mobile-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Weight Loss Options</a>
+                    <ul class="sub-menu">
+                        <li><a href="weight-loss-component.html">Surgical Options</a></li>
+                        <li><a href="non-surgical-weight-loss.html">Non-Surgical Options</a></li>
+                        <li><a href="m">Medical Weight Loss Options</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Locations</a>
+                    <ul class="sub-menu">
+                        <li><a href="https://drmohitbhandari.com/indore">Indore</a></li>
+                        <li><a href="https://drmohitbhandari.com/ahamdabad">Ahmedabad</a></li>
+                        <li><a href="https://drmohitbhandari.com/mumbai">Mumbai</a></li>
+                        <li><a href="https://drmohitbhandari.com/gurgaon">Gurugram</a></li>
+                        <li><a href="https://drmohitbhandari.com/hyderabad">Hyderabad</a></li>
+                        <li><a href="https://drmohitbhandari.com/nairobi">Nairobi</a></li>
+                        <li><a href="https://drmohitbhandari.com/der-es-salaam">Dar-es-Salaam</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">More</a>
+                    <ul class="sub-menu">
+                        <li><a href="https://drmohitbhandari.com/team">Team</a></li>
+                        <li><a href="https://drmohitbhandari.com/gallary">Gallery</a></li>
+                        <li><a href="https://drmohitbhandari.com/blog">Blog</a></li>
+                        <li><a href="https://drmohitbhandari.com/patient-testimonials">Patient Testimonials</a></li>
+                    </ul>
+                </li>
 
-                    
-                    <li>
-                        <a href="https://drmohitbhandari.com/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+
+                <li>
+                    <a href="https://drmohitbhandari.com/contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 
-    <!doctype html>
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -425,7 +454,9 @@
 	   Google Web Fonts
 	============================== -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
 
     <!-- Favicons - Place favicon.ico in the root directory -->
@@ -441,15 +472,18 @@
     Breadcumb
 ============================== -->
     <div class="breadcumb-wrapper ">
-        <div class="parallax" data-parallax-image="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" style="width: 100%; height: 100%; object-fit: cover; clip: auto;"></div>
+        <div class="parallax"
+            data-parallax-image="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+            style="width: 100%; height: 100%; object-fit: cover; clip: auto;"></div>
         <div class="container z-index-common">
             <div class="breadcumb-content">
                 <h1 class="text-white">Surgical Weight Loss</h1>
-                <p class="text-white">Explore our advanced surgical options for effective weight loss transformations</p>
+                <p class="text-white">Explore our advanced surgical options for effective weight loss transformations
+                </p>
                 <div class="breadcumb-menu-wrap">
                     <i class="far fa-home-lg"></i>
                     <ul class="breadcumb-menu">
-                        <li ><a href="index.html"><span style="color:#025b62 !important;">Home</span></a></li>
+                        <li><a href="index.html"><span style="color:#025b62 !important;">Home</span></a></li>
                         <li style="color: #025b62;" class="active">Surgical Weight Loss</li>
                     </ul>
                 </div>
@@ -457,28 +491,42 @@
         </div>
     </div>
 
-    <section class="features-wrapper" data-bg-src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.pn" style="background-image: url(&quot;assets/img/bg/bg-shape-10.jpg&quot;);">
+    <section class="features-wrapper"
+        data-bg-src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.pn"
+        style="background-image: url(&quot;assets/img/bg/bg-shape-10.jpg&quot;);">
         <div class="container p-20">
             <div class="row">
                 <div class="col-xl-5 col-xxl-6">
-                    <div class="features-video-box position-relative vs-surface wow animated" data-wow-delay="0.3s" data-bg-src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" style="background-image: url(https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png); visibility: visible; animation-delay: 0.3s;">
-                        <a href="https://www.youtube.com/watch?v=D9STdvwJVQY" class="play-btn popup-video style2 position-center"><i class="fas fa-play"></i></a>
+                    <div class="features-video-box position-relative vs-surface wow animated" data-wow-delay="0.3s"
+                        data-bg-src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                        style="background-image: url(https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png); visibility: visible; animation-delay: 0.3s;">
+                        <a href="https://www.youtube.com/watch?v=D9STdvwJVQY"
+                            class="play-btn popup-video style2 position-center"><i class="fas fa-play"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-7 col-xxl-6">
                     <div class="features-inner">
-                        
+
                         <div class="features-about text-center text-xl-start">
                             <h2 class="h1 title-divider" style="color: #025b62;">What is Weight Loss Surgery</h2>
-                            <p>Weight-loss surgery encompasses a group of operations that help you lose weight by making changes to your digestive system. It is also known as metabolic and bariatric surgery ("metabolic" means "related to how your body gets energy" and "bariatric" means "related to treatment for heavy weight").</p>
+                            <p>Weight-loss surgery encompasses a group of operations that help you lose weight by making
+                                changes to your digestive system. It is also known as metabolic and bariatric surgery
+                                ("metabolic" means "related to how your body gets energy" and "bariatric" means "related
+                                to treatment for heavy weight").</p>
 
-                            <p>Some types of weight-loss surgery make your stomach smaller, limiting how much you can eat and drink at one time, so you feel full sooner. Other types of weight-loss surgery change your small intestine—the part of your digestive system that absorbs energy and nutrients from foods and beverages. These types of surgery reduce the number of calories the body can absorb. Weight-loss surgery also can affect hormones or bacteria in the gastrointestinal tract in ways that may reduce appetite and hunger and improve how the body metabolizes fat and makes use of insulin.</p>
+                            <p>Some types of weight-loss surgery make your stomach smaller, limiting how much you can
+                                eat and drink at one time, so you feel full sooner. Other types of weight-loss surgery
+                                change your small intestine—the part of your digestive system that absorbs energy and
+                                nutrients from foods and beverages. These types of surgery reduce the number of calories
+                                the body can absorb. Weight-loss surgery also can affect hormones or bacteria in the
+                                gastrointestinal tract in ways that may reduce appetite and hunger and improve how the
+                                body metabolizes fat and makes use of insulin.</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </div>
     </section>
     <section style="margin-top: 30px;margin-bottom: 30px;padding-top: 20px;padding-bottom: 20px;">
@@ -489,25 +537,37 @@
 
                 <!-- <p>Body Mass Index (BMI) is a measure of obesity used to determine who are good candidates for weight-loss surgery. BMI measures body fat based on weight in relation to height. For people with a BMI of 35 or higher, obesity can be hard to treat with diet and exercise alone, so health care professionals may recommend weight-loss surgery. For people with a BMI of 30-35 who have type 2 diabetes that is difficult to control with medications and lifestyle changes, weight-loss surgery may be considered as a treatment option.</p> -->
 
-                <h3 class="h3 text-theme" style="color: #025b62 !important;">Am I eligible for bariatric surgeries ?</h3>
-                <p>To qualify for bariatric surgery, typically referred to as weight-loss surgery, you need to meet certain criteria. Here's a summary:</p>
+                <h3 class="h3 text-theme" style="color: #025b62 !important;">Am I eligible for bariatric surgeries ?
+                </h3>
+                <p>To qualify for bariatric surgery, typically referred to as weight-loss surgery, you need to meet
+                    certain criteria. Here's a summary:</p>
                 <div style="list-style-type: none;">
-                    <h5 style="color: #025b62;">1. BMI Criteria:</h5> 
-                    <p>Body Mass Index (BMI) – Above 40 -  Generally, you need to have a BMI of 40 or higher to qualify for weight-loss surgery. If your BMI is between 35 and 40, you may qualify if you have significant obesity-related health issues such as type 2 diabetes or high blood pressure.</p>
+                    <h5 style="color: #025b62;">1. BMI Criteria:</h5>
+                    <p>Body Mass Index (BMI) – Above 40 - Generally, you need to have a BMI of 40 or higher to qualify
+                        for weight-loss surgery. If your BMI is between 35 and 40, you may qualify if you have
+                        significant obesity-related health issues such as type 2 diabetes or high blood pressure.</p>
 
-                    <h5 style="color: #025b62;">2. Obesity-Related Health Issues:</h5> 
-                    <p>Even if your BMI is within the qualifying range, you may still need to demonstrate that you have obesity-related health issues that haven't responded well to other treatments. These may include type 2 diabetes, high blood pressure, sleep apnea, or others.</p>
+                    <h5 style="color: #025b62;">2. Obesity-Related Health Issues:</h5>
+                    <p>Even if your BMI is within the qualifying range, you may still need to demonstrate that you have
+                        obesity-related health issues that haven't responded well to other treatments. These may include
+                        type 2 diabetes, high blood pressure, sleep apnea, or others.</p>
 
-                    <h5 style="color: #025b62;">3. Failed Attempts at Weight Loss:</h5> 
-                    <p>You should have a  history of attempts to lose weight through diet, exercise, and lifestyle changes without long-term success.</p>
+                    <h5 style="color: #025b62;">3. Failed Attempts at Weight Loss:</h5>
+                    <p>You should have a history of attempts to lose weight through diet, exercise, and lifestyle
+                        changes without long-term success.</p>
 
-                    <h5 style="color: #025b62;">4. Commitment to Lifestyle Changes:</h5> 
-                    <p>Bariatric surgery is not a quick fix; it requires significant lifestyle changes, including dietary modifications and regular exercise, for long-term success.</p>
+                    <h5 style="color: #025b62;">4. Commitment to Lifestyle Changes:</h5>
+                    <p>Bariatric surgery is not a quick fix; it requires significant lifestyle changes, including
+                        dietary modifications and regular exercise, for long-term success.</p>
 
-                    <h5 style="color: #025b62;">5. Age and General Health:</h5> 
-                    <p>While there's no strict age limit for bariatric surgery, your overall health and ability to tolerate surgery will be considered.</p>
+                    <h5 style="color: #025b62;">5. Age and General Health:</h5>
+                    <p>While there's no strict age limit for bariatric surgery, your overall health and ability to
+                        tolerate surgery will be considered.</p>
                 </div>
-                <p>It's important to remember that the specific criteria for bariatric surgery may vary depending on factors such as the type of surgery and guidelines.  If you're considering bariatric surgery, it's crucial to consult with a qualified healthcare professional who can assess your individual situation and provide personalized guidance.</p>
+                <p>It's important to remember that the specific criteria for bariatric surgery may vary depending on
+                    factors such as the type of surgery and guidelines. If you're considering bariatric surgery, it's
+                    crucial to consult with a qualified healthcare professional who can assess your individual situation
+                    and provide personalized guidance.</p>
             </div>
         </div>
     </section>
@@ -516,75 +576,91 @@
         <div class="container-fluid">
             <div>
                 <div class="features-about text-center text-xl-start">
-                <h3 class="h1 text-center" style="color: #025b62;">Weight Loss Surgeries</h3>
-                <!-- <p class="text-center">Proactively revolutionize granular customer service after pandemic internal or "organic" sources impact proactive human</p> -->
+                    <h3 class="h1 text-center" style="color: #025b62;">Weight Loss Surgeries</h3>
+                    <!-- <p class="text-center">Proactively revolutionize granular customer service after pandemic internal or "organic" sources impact proactive human</p> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="service-thumb">
+                            <div class="sr-img">
+                                <img class="w-100"
+                                    src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                                    alt="Serivce Image">
+                            </div>
+                            <div class="sr-body">
+                                <!-- <span class="sr-icon"><i class="flaticon-discuss fa-3x"></i></span> -->
+                                <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset"
+                                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Bariatric
+                                        Surgery</a></h3>
+                                <div class="sr-content">
+                                    <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
+                                    <!-- <a href="https://drmohitbhandari.com/bariatric-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="service-thumb">
+                            <div class="sr-img">
+                                <img class="w-100"
+                                    src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                                    alt="Serivce Image">
+                            </div>
+                            <div class="sr-body">
+                                <!-- <span class="sr-icon"><i class="flaticon-healthcare fa-3x"></i></span> -->
+                                <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset"
+                                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Revision
+                                        Bariatric Surgery</a></h3>
+                                <div class="sr-content">
+                                    <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
+                                    <!-- <a href="https://drmohitbhandari.com/revision-bariatric-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="service-thumb">
+                            <div class="sr-img">
+                                <img class="w-100"
+                                    src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                                    alt="Serivce Image">
+                            </div>
+                            <div class="sr-body">
+                                <!-- <span class="sr-icon"><i class="flaticon-group fa-3x"></i></span> -->
+                                <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset"
+                                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Bariatric
+                                        Endoscopy</a></h3>
+                                <div class="sr-content">
+                                    <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
+                                    <!-- <a href="https://drmohitbhandari.com/bariatric-endoscopy" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="service-thumb">
+                            <div class="sr-img">
+                                <img class="w-100"
+                                    src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png"
+                                    alt="Serivce Image">
+                            </div>
+                            <div class="sr-body">
+                                <!-- <span class="sr-icon"><i class="flaticon-quality-of-life fa-3x"></i></span> -->
+                                <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset"
+                                        href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Reconstructive
+                                        Surgery</a></h3>
+                                <div class="sr-content">
+                                    <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
+                                    <!-- <a href="https://drmohitbhandari.com/post-bariatric-reconstructive-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-xl-3">
-                    <div class="service-thumb">
-                        <div class="sr-img">
-                            <img class="w-100" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" alt="Serivce Image">
-                        </div>
-                        <div class="sr-body">
-                            <!-- <span class="sr-icon"><i class="flaticon-discuss fa-3x"></i></span> -->
-                            <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset" href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Bariatric Surgery</a></h3>
-                            <div class="sr-content">
-                                <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
-                                <!-- <a href="https://drmohitbhandari.com/bariatric-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="service-thumb">
-                        <div class="sr-img">
-                            <img class="w-100" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" alt="Serivce Image">
-                        </div>
-                        <div class="sr-body">
-                            <!-- <span class="sr-icon"><i class="flaticon-healthcare fa-3x"></i></span> -->
-                            <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset" href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Revision Bariatric Surgery</a></h3>
-                            <div class="sr-content">
-                                <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
-                                <!-- <a href="https://drmohitbhandari.com/revision-bariatric-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="service-thumb">
-                        <div class="sr-img">
-                            <img class="w-100" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" alt="Serivce Image">
-                        </div>
-                        <div class="sr-body">
-                            <!-- <span class="sr-icon"><i class="flaticon-group fa-3x"></i></span> -->
-                            <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset" href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Bariatric Endoscopy</a></h3>
-                            <div class="sr-content">
-                                <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
-                                <!-- <a href="https://drmohitbhandari.com/bariatric-endoscopy" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                    <div class="service-thumb">
-                        <div class="sr-img">
-                            <img class="w-100" src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png" alt="Serivce Image">
-                        </div>
-                        <div class="sr-body">
-                            <!-- <span class="sr-icon"><i class="flaticon-quality-of-life fa-3x"></i></span> -->
-                            <h3 class="h4 sr-title " style="color: #025b62;"><a class="text-reset" href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/DrSurendra.png">Reconstructive Surgery</a></h3>
-                            <div class="sr-content">
-                                <!-- <p class="sr-text">Appropriately customize excellent imperatives for products. </p> -->
-                                <!-- <a href="https://drmohitbhandari.com/post-bariatric-reconstructive-surgery" class="link-btn">Read More<i class="fal fa-long-arrow-right"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
     </section>
-    
+
 
 
     <!-- Scroll To Top -->
@@ -597,34 +673,35 @@
 </html><!--==============================
         All Js File
     ============================== -->
-    <!-- Jquery -->
-    <script src="https://drmohitbhandari.com/assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="https://drmohitbhandari.com/assets/js/slick.min.js"></script>
-    <!-- <script src="assets/js/app.min.js"></script> -->
-    <!-- Layerslider -->
-    <script src="https://drmohitbhandari.com/assets/js/layerslider.utils.js"></script>
-    <script src="https://drmohitbhandari.com/assets/js/layerslider.transitions.js"></script>
-    <script src="https://drmohitbhandari.com/assets/js/layerslider.kreaturamedia.jquery.js"></script>
-    <!-- Bootstrap -->
-    <script src="https://drmohitbhandari.com/assets/js/bootstrap.min.js"></script>
-    <!-- jQuery Datepicker -->
-    <script src="https://drmohitbhandari.com/assets/js/jquery.datetimepicker.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="https://drmohitbhandari.com/assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Isotope Filter -->
-    <script src="https://drmohitbhandari.com/assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="https://drmohitbhandari.com/assets/js/isotope.pkgd.min.js"></script>
-    <!-- Parallax Scroll -->
-    <script src="https://drmohitbhandari.com/assets/js/universal-parallax.min.js"></script>
-    <!-- WOW Animation -->
-    <script src="https://drmohitbhandari.com/assets/js/wow.min.js"></script>
-    <!-- Custom Carousel -->
-    <script src="https://drmohitbhandari.com/assets/js/vscustom-carousel.min.js"></script>
-    <!-- Form Js -->
-    <script src="https://drmohitbhandari.com/assets/js/ajax-mail.js"></script>
-    <!-- Main Js File -->
-    <script src="https://drmohitbhandari.com/assets/js/main.js"></script><style type="text/css">
+<!-- Jquery -->
+<script src="https://drmohitbhandari.com/assets/js/vendor/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider -->
+<script src="https://drmohitbhandari.com/assets/js/slick.min.js"></script>
+<!-- <script src="assets/js/app.min.js"></script> -->
+<!-- Layerslider -->
+<script src="https://drmohitbhandari.com/assets/js/layerslider.utils.js"></script>
+<script src="https://drmohitbhandari.com/assets/js/layerslider.transitions.js"></script>
+<script src="https://drmohitbhandari.com/assets/js/layerslider.kreaturamedia.jquery.js"></script>
+<!-- Bootstrap -->
+<script src="https://drmohitbhandari.com/assets/js/bootstrap.min.js"></script>
+<!-- jQuery Datepicker -->
+<script src="https://drmohitbhandari.com/assets/js/jquery.datetimepicker.min.js"></script>
+<!-- Magnific Popup -->
+<script src="https://drmohitbhandari.com/assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Isotope Filter -->
+<script src="https://drmohitbhandari.com/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="https://drmohitbhandari.com/assets/js/isotope.pkgd.min.js"></script>
+<!-- Parallax Scroll -->
+<script src="https://drmohitbhandari.com/assets/js/universal-parallax.min.js"></script>
+<!-- WOW Animation -->
+<script src="https://drmohitbhandari.com/assets/js/wow.min.js"></script>
+<!-- Custom Carousel -->
+<script src="https://drmohitbhandari.com/assets/js/vscustom-carousel.min.js"></script>
+<!-- Form Js -->
+<script src="https://drmohitbhandari.com/assets/js/ajax-mail.js"></script>
+<!-- Main Js File -->
+<script src="https://drmohitbhandari.com/assets/js/main.js"></script>
+<style type="text/css">
     .footer1-logo img {
         padding: 15px !important;
     }
@@ -632,37 +709,37 @@
 <!--==============================
 			Footer Area
 	==============================-->
-     <!-- Footer section -->
-    <section class="footer">
-        <div class="footer-content">
-            <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png">
-            <p>&copy; 2024 Rishik Hospital. All rights reserved.</p>
-            <div class="icons">
-                <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="https://www.yahoo.com"><i class='bx bxl-youtube'></i></a>
-            </div>
+<!-- Footer section -->
+<section class="footer">
+    <div class="footer-content">
+        <img src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png">
+        <p>&copy; 2024 Rishik Hospital. All rights reserved.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.yahoo.com"><i class='bx bxl-youtube'></i></a>
         </div>
-        <div class="footer-content">
-            <h4>CONTACT</h4>
-            <li><a href="">rishikhospitals@gmail.com</a></li>
-            <li><a href="">7300333555</a></li>
-            <li><a href="">8302883529</a></li>
-        </div>
-        <div class="footer-content">
-            <h4>QUICK LINKS</h4>
-            <li><a href="/var/www/html/index.html">Home</a></li>
-            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
-            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/procedures.html">Procedures</a></li>
-            <li><a href="">Cosmetics</a></li>
-            <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a></li>
-        </div>
-        <div class="footer-content">
-            <h4>ADDRESS</h4>
-            <li><a href="">Plot No -17, Near ECHS Clinic, <br>Vidyadhar Nagar, Jaipur, Rajasthan <br>302013</a></li>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.253758746908!2d75.77015087520198!3d26.95886227661972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3b907b20303%3A0xb41bb8f4f6745a85!2sRISHIK%20HOSPITALS%20-%20Gastro%20%26%20Bariatric%20in%20Jaipur%20Rajasthan%2C%20Best%20Hospital%20in%20Vidhyadhar%20Nagar%20Jaipur%20%7C%20hair%20transplant%20surgeon!5e0!3m2!1sen!2sin!4v1708957098131!5m2!1sen!2sin"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
+    </div>
+    <div class="footer-content">
+        <h4>CONTACT</h4>
+        <li><a href="">rishikhospitals@gmail.com</a></li>
+        <li><a href="">7300333555</a></li>
+        <li><a href="">8302883529</a></li>
+    </div>
+    <div class="footer-content">
+        <h4>QUICK LINKS</h4>
+        <li><a href="/var/www/html/index.html">Home</a></li>
+        <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html">About</a></li>
+        <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/procedures.html">Procedures</a></li>
+        <li><a href="">Cosmetics</a></li>
+        <li><a href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html">Gallary</a></li>
+    </div>
+    <div class="footer-content">
+        <h4>ADDRESS</h4>
+        <li><a href="">Plot No -17, Near ECHS Clinic, <br>Vidyadhar Nagar, Jaipur, Rajasthan <br>302013</a></li>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.253758746908!2d75.77015087520198!3d26.95886227661972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3b907b20303%3A0xb41bb8f4f6745a85!2sRISHIK%20HOSPITALS%20-%20Gastro%20%26%20Bariatric%20in%20Jaipur%20Rajasthan%2C%20Best%20Hospital%20in%20Vidhyadhar%20Nagar%20Jaipur%20%7C%20hair%20transplant%20surgeon!5e0!3m2!1sen!2sin!4v1708957098131!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
