@@ -5,7 +5,14 @@
     box-sizing: border-box;
 }
 
-
+.fa-whatsapp {
+    font-size: 55px;
+    position: fixed;
+    color: #26C943;
+    z-index: 9999;
+    top: 65px;
+    right: 90px;
+}
 
 
 /*To add space between section use this css */
@@ -66,9 +73,9 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 90px;
+    margin-left: 60px;
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 ul li a{
@@ -635,8 +642,37 @@ h2 {
     transform: rotate(-45deg);
     transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+  .icon .logo {
+    cursor: pointer;
+  }
 /* Responsive styles */
+@media (max-width: 1450px) {
+    ul li{
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 1180px) {
+    ul li{
+        margin-left: 35px;
+        font-size: 12px;
+    }
+}
+@media (min-width:768px) and  (max-width:1180px) {
+    .icon {
+        display: none !important;
+    }
+    .menu {
+        padding-left: 20px;
+    }
+}
 @media (max-width: 768px) {
+    .fa-whatsapp {
+        top: 10px;
+        right: 30px;
+        font-size: 30px;
+    }
     header {
         padding: 10px;
     }

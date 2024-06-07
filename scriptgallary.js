@@ -12,3 +12,6 @@ function removeActiveClasses() {
         panel.classList.remove("active");
     })
 }
+function openHome() {
+    window.location.href = "/index.html"
+}

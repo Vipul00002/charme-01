@@ -65,7 +65,7 @@
           margin: 50px auto !important;
         }
         .card-container {
-            flex-direction: column;
+          flex-direction: column;
         }
 
         .card {
@@ -124,6 +124,7 @@
       <div class="navbar">
         <div class="icon">
           <img
+            onclick="openHome()"
             class="logo"
             src="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/media/logo3.png"
             alt="Rishik Hospital Logo"
@@ -135,50 +136,34 @@
         <div class="menu">
           <ul>
             <li>
-              <a
-                href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/index.html"
-                >Home</a
-              >
+              <a href="/index.html">Home</a>
             </li>
             <li>
-              <a
-                href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html"
-                >About</a
-              >
+              <a href="/about.html">About</a>
             </li>
             <li>
-              <a
-                href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/services.html"
-                >Procedures</a
-              >
+              <a href="/services.html">Procedures</a>
             </li>
-            <li><a href="#">Cosmetic</a></li>
+            <li><a href="https://rishikcosmeticsciences.com/" target="_blank">Cosmetic</a></li>
             <li>
-              <a
-                href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html"
-                >Gallary</a
-              >
+              <a href="/gallary.html">Gallary</a>
             </li>
             <li>
-              <a
-                href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html"
-                >Contact</a
-              >
+              <a href="/contact.html">Contact</a>
             </li>
             <li onclick="openModal()" id="weight-loss">
               <a style="width: 150px; display: inline-block" href=""
                 >Weight Loss</a
               >
             </li>
-            <li>
-              <a
-                href="https://wa.me/+917300333555"
-                ><i style="font-size: 40px ;" class="fa-brands fa-whatsapp"></i></a
-              >
-            </li>
             
           </ul>
         </div>
+        
+          <a href="https://wa.me/+917300333555"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        
       </div>
 
       <div
@@ -202,7 +187,7 @@
         </h1>
 
         <div
-        class="card-container"
+          class="card-container"
           style="
             width: 100%;
             padding: 20px;
@@ -211,8 +196,7 @@
           "
         >
           <div
-          class="card"
-         
+            class="card"
             style="
               margin-right: 25px;
               background-color: white;
@@ -309,7 +293,7 @@
           </div>
 
           <div
-          class="card"
+            class="card"
             style="
               background-color: white;
               border-radius: 10px;
@@ -407,7 +391,7 @@
           </div>
 
           <div
-          class="card"
+            class="card"
             style="
               margin-left: 25px;
               background-color: white;
@@ -501,7 +485,6 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <script
@@ -510,6 +493,9 @@
           defer
         ></script>
         <script>
+          function openHome() {
+            window.location.href = "/index.html"
+          }
           function hideDiv() {
             let div = document.getElementById("modal");
             let formEle = document.getElementById("form");
@@ -532,7 +518,6 @@
           }
         </script>
       </div>
-
 
       <script src="https://web3forms.com/client/script.js" async defer></script>
       <script>
@@ -630,7 +615,7 @@
         </script>
       </div>
     </div>
-    <div class="form" id="form" style="z-index: -1">
+    <div class="form" id="form" style="z-index: -1; display: none">
       <input
         type="hidden"
         name="access_key"
@@ -675,11 +660,7 @@
               Experience the difference with Rishik Hospitals, where your health
               and satisfaction are our top priorities.
             </p>
-            <a
-              href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/contact.html"
-              class="btn"
-              >Contact Us</a
-            >
+            <a href="/contact.html" class="btn">Contact Us</a>
           </div>
           <div class="about-image">
             <img
@@ -1028,23 +1009,14 @@
         <h4>QUICK LINKS</h4>
         <li><a href="/var/www/html/index.html">Home</a></li>
         <li>
-          <a
-            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/about.html"
-            >About</a
-          >
+          <a href="/about.html">About</a>
         </li>
         <li>
-          <a
-            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/procedures.html"
-            >Procedures</a
-          >
+          <a href="/procedures.html">Procedures</a>
         </li>
         <li><a href="">Cosmetics</a></li>
         <li>
-          <a
-            href="https://rishikhospital.s3.ap-south-1.amazonaws.com/website/gallary.html"
-            >Gallary</a
-          >
+          <a href="/gallary.html">Gallary</a>
         </li>
       </div>
       <div class="footer-content">
