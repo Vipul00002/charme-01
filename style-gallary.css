@@ -36,12 +36,12 @@
 }
 
 .menu ul li {
-    margin-right: 90px; /* Adjust spacing between menu items */
+    margin-right: 90px; /* Adjust spacing between menu items
 }
 
 .menu ul li:last-child {
     margin-right: 50px; /* Remove margin from the last menu item */
-}
+} */
 
 .menu ul li a {
     text-decoration: none;
@@ -100,6 +100,93 @@
     transition: opacity 0.3s ease-in 0.4s;
 }
 
+
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9998;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background-color: rgb(2 91 98 / 76%);
+    /* background-color: #025b62; */
+    padding: 12px 20px;
+    display: none;
+}
+  
+  .bar,
+  .bar:after,
+  .bar:before {
+    width: 30px;
+    height: 3px;
+  }
+  
+  .bar {
+    position: relative;
+    transform: translateY(10px);
+    background: white;
+    transition: all 0ms 300ms;
+  }
+  
+  .bar.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  .bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .bar.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .icon .logo {
+    cursor: pointer;
+  }
+@media (max-width: 1450px) {
+    ul li{
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+}
+@media (max-width: 1180px) {
+    ul li{
+        margin-left: 35px;
+        font-size: 12px;
+    }
+}
+@media (min-width:768px) and  (max-width:1180px) {
+    .icon {
+        display: none !important;
+    }
+    .menu {
+        padding-left: 20px;
+    }
+}
 @media (max-width:480px) {
     .container {
         width: 100vw;
@@ -110,6 +197,55 @@
     .panel:nth-of-type(5) {
         display: none;
     }
+}
+@media (max-width: 768px) {
+    .fa-whatsapp {
+        top: 10px;
+        right: 30px;
+        font-size: 30px;
+    }
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block !important;
+        position: fixed;
+        background-color: #025b62;
+        height: 100%;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        padding-left: 0px;
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu.active ul {
+        display: block;
+        width: 100%;
+    }
+    .menu.active ul li {
+        list-style: none;
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 24px;
+        padding: 14px 22px;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+    .hamburger-menu {display: block;}
 }
 
 /* Footer styles */
